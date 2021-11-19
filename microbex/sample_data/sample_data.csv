@@ -1,0 +1,28 @@
+culture_id,visit_id,parsed_note
+0,0,Many species present
+1,1,alpha hemolytic streptococci in anaerobic bottle
+1,1,coagulase negative Staphylococcus species in bottle with antibiotic removal resin
+1,1,gram positive cocci in clusters in bottle with antibiotic removal resin
+1,1,no bacteria detected
+2,2,submitting a repeat specimen.
+2,2,Culture terminated due to overgrowth with an unrelated organism. Consider
+3,3,gram positive cocci in clusters in bottle with antibiotic removal resin
+3,3,coagulase negative Staphylococcus species strain 2 in bottle with antibiotic
+3,3,non-hemolytic streptococci in anaerobic bottle
+3,3,coagulase negative Staphylococcus species strain 1 in bottle with antibiotic
+3,3,gram positive cocci in chains in anaerobic bottle
+3,3,LDK
+3,3,removal resin
+3,3,removal resin
+4,4,Klebsiella pneumoniae in aerobic and anaerobic bottles
+4,4,gram negative bacilli in aerobic and anaerobic bottles
+5,5,Many Pseudomonas aeruginosa
+5,5,Many Klebsiella pneumoniae
+5,5,Many Acinetobacter baumanii
+6,6,Klebsiella pneumoniae in aerobic and anaerobic bottles
+6,6,gram negative bacilli in aerobic and anaerobic bottles
+7,7,gram negative bacilli in bottle with antibiotic removal resin
+7,7,Klebsiella pneumoniae in bottle with antibiotic removal resin
+7,7,Klebsiella pneumoniae strain 2 in anaerobic bottle
+7,7,gram negative bacilli in anaerobic bottle
+8,8,Many species present

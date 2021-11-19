@@ -1,0 +1,2 @@
+include microbex/sample_data/*.csv
+include microbex/sample_data/*.pkl
