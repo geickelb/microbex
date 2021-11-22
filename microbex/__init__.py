@@ -1,1 +1,1 @@
-from microbex.microbex import Microbex()
+from microbex.microbex import Microbex

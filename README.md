@@ -53,11 +53,11 @@ the microbex class instantiation takes in a pandas dataframe with 3 expected col
 
 #### Inline:
 ```sh
-import microbex
+import microbex as me
 d={'parsed_note': 'No Salmonella, Shigella, Campylobacter, Aeromonas or Plesiomonas isolated.', 'culture_id': 1, 'visit_id': 1}
 df=pd.DataFrame(data=d, index=[1])
 
-obj1= microbex(df,
+obj1= me.Microbex(df,
               text_col='parsed_note',
               culture_id_col='culture_id',
               visit_id_col='visit_id')
