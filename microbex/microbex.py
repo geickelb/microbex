@@ -195,7 +195,7 @@ class Microbex:
                 ### flora flag testing
             flora_bool1=df[text_col].apply(lambda x: re.search(r'flora',str(x).lower())is not None)
             flora_bool2=df['species_capt'].apply(lambda x: len(x))>0
-            flora_bool3= df['result_num']==0
+            flora_bool3= df['pos_culture_status']==0
             flora_flag= (flora_bool1) & (flora_bool2) & (flora_bool3) 
 
             df['flora_flag']=0
