@@ -364,12 +364,12 @@ class Microbex:
         def microbio_note_preprocess(data, text_col):
             """ uses value_map_dic 1 and 2 to substitute out common abbreviations and formatting to more parser friendly formatting. """
 
-            mapped=data[self.text_col].map(self.value_map_dict)
+            mapped=data[text_col].map(self.value_map_dict)
               
-            data.loc[mapped.notna(),self.text_col]=mapped[mapped.notna()]
+            data.loc[mapped.notna(),text_col]=mapped[mapped.notna()]
                 ###
             for element in self.value_map_dict2.keys():
-                data[self.text_col]=self.raw_data[self.text_col].apply(lambda x: re.sub(element, self.value_map_dict2[element], str(x), flags=re.IGNORECASE))
+                data[text_col]=self.raw_data[text_col].apply(lambda x: re.sub(element, self.value_map_dict2[element], str(x), flags=re.IGNORECASE))
 
             data_preprocessed=data.copy()
             data_preprocessed['pos_culture_audit1']=pd.Series(['not_captured' for x in range(len(data_preprocessed))], name='pos_culture_audit1')
@@ -512,9 +512,7 @@ class Microbex:
         ### combining data_neg + virus + yeast back together
         data_neg=data_neg.append(data_yeast)#df_concat(data_neg, data_yeast)
         data_neg=data_neg.append(data_virus)#data_neg=df_concat(data_neg, data_virus)
-        
-#         toc = time.perf_counter()
-#         print(f"virus, neg, yeast, etc...: {toc - tic:0.4f} seconds")
+
         
         
         ########step2.1: adding species captures on negatives without changing pos_culture_audit1 and pos_culture_status, aka binary outcome. 

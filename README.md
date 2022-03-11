@@ -49,6 +49,7 @@ the microbex class instantiation takes in a pandas dataframe with 3 expected col
     * can be 1-many:1 to culture_id or 1:1 (in which case can specify as culture_id)
     * in some datasets a patient may have multiple cultures performed in a visit/encounter. 
 
+see AlgorithmDetails.md for more detailed information on MicrobEx usage and algorithm details.
 
 
 #### Inline:
